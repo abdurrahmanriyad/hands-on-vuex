@@ -5,6 +5,7 @@ import App from './App'
 import VueRouter from 'vue-router'
 import Blog from './components/Blog'
 import Blogs from './components/Blogs'
+import store from './store'
 
 Vue.use(VueRouter);
 
@@ -22,6 +23,7 @@ const router = new VueRouter({
 /* eslint-disable no-new */
 new Vue({
     router,
+    store,
     components: {App},
     template: '<App/>'
 }).$mount('#app');

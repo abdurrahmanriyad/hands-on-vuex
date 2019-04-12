@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+        {{ count }}
         <router-view></router-view>
     </div>
 </template>
@@ -10,7 +11,12 @@
 
     export default {
         name: 'App',
-        components: {Blogs}
+        components: {Blogs},
+        computed: {
+            count () {
+                return this.$store.getters.count;
+            }
+        }
     }
 </script>
 
