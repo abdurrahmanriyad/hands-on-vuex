@@ -1,6 +1,6 @@
 # hands-on-vuex
 
-> A Vue.js project
+> A Vue.js project which contains basic vuex 
 
 ## Build Setup
 
